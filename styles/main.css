@@ -1,0 +1,258 @@
+/* Write your CSS in here */
+
+html {
+   font-size: 10px;
+   width: 1024px;
+}
+
+header {
+   display: flex;
+   background-color: #294a71;
+   justify-content: space-between;
+   border-bottom: 0.1rem solid #979797;
+}
+
+body {
+   /* Don't delete this */
+   font-family: "Roboto", Arial, Helvetica, sans-serif;
+}
+
+.logo {
+   font-size: 3rem;
+   font-weight: 900;
+   color: #ffffff;
+   margin-top: auto;
+   margin-left: 2rem;
+   margin-bottom: auto;
+}
+
+.avatar {
+   background-image: url(../images/bruno-ewayu-D8Qm_GmKRbk-unsplash.jpg);
+   background-size: cover;
+   background-position: 50% 50%;
+   border-radius: 50%;
+   border: 0.3rem solid #979797;
+   width: 4.7rem;
+   height: 4.8rem;
+   margin-top: auto;
+   margin-bottom: auto;
+}
+
+.nav-list {
+   list-style-type: none;
+   font-size: 2rem;
+   width: 29rem;
+   display: flex;
+   justify-content: space-between;
+   margin-right: 2rem;
+}
+
+a:link {
+   text-decoration: none;
+   color: #d2d2d2;
+}
+a:visited {
+   text-decoration: none;
+   color: #d2d2d2;
+}
+a:hover {
+   text-decoration: none;
+}
+a:active {
+   text-decoration: none;
+}
+
+.masthead {
+   background-color: #0c2139;
+}
+
+.mediabox {
+   display: flex;
+   color: #ffffff;
+   flex-direction: row-reverse;
+   text-align: right;
+}
+
+.mediabox:nth-of-type(2n) {
+   flex-direction: row;
+   text-align: left;
+}
+
+.masthead .mediabox .mediabox-visual {
+   background-image: url(../images/engin-akyurt-C11UKrFo4CQ-unsplash.jpg);
+   background-size: cover;
+   width: 38rem;
+   height: 21.7rem;
+   margin-top: 6.2rem;
+   margin-right: 6.8rem;
+   margin-bottom: 6.2rem;
+   margin-left: 2.7rem;
+}
+
+.masthead .mediabox:nth-of-type(2n) .mediabox-visual {
+   background-image: url(../images/engin-akyurt-C11UKrFo4CQ-unsplash.jpg);
+   background-size: cover;
+   width: 38rem;
+   height: 21.7rem;
+   margin-top: 6.2rem;
+   margin-right: 2.7rem;
+   margin-bottom: 6.2rem;
+   margin-left: 6.8rem;
+}
+
+.mediabox-text {
+   width: 48.2rem;
+}
+
+.mediabox-text__headline {
+   font-size: 8rem;
+   font-weight: 400;
+   text-transform: uppercase;
+   line-height: 4.5rem;
+   margin-bottom: 0px;
+}
+
+.mediabox-text__summary {
+   font-size: 2.4rem;
+   font-weight: lighter;
+   line-height: 4.8rem;
+}
+
+.grid {
+   background-color: #294a71;
+   font-size: 7.2rem;
+   font-weight: 900;
+   border-bottom: 0.1rem solid #979797;
+   margin-top: 0rem;
+   margin-bottom: 0rem;
+}
+
+.boxes {
+   margin-top: 0rem;
+   margin-right: 0rem;
+   margin-bottom: 0rem;
+   margin-left: 0rem;
+   padding-left: 0rem;
+   list-style-type: none;
+   display: grid;
+   grid-template-columns: 33.3% 33.4% 33.3%;
+   grid-template-rows: 50% 50%;
+   grid-template-areas:
+      "top-left top-middle top-right"
+      "bottom-left bottom-middle bottom-right";
+}
+
+.box {
+   color: #4a4a4a;
+   background-color: #d8d8d8;
+   width: 20rem;
+   height: 20rem;
+   border: 0.1rem solid #979797;
+   margin-top: 3.45rem;
+   margin-right: 7.5rem;
+   margin-bottom: 3.45rem;
+   margin-left: 7.5rem;
+   text-align: center;
+   line-height: 20rem;
+}
+
+.boxes-1 .item-1 {
+   grid-area: top-left;
+   margin-top: 7.5rem;
+   margin-right: 0rem;
+   margin-left: 13.6rem;
+}
+.boxes-1 .item-2 {
+   grid-area: top-middle;
+   margin-top: 7.5rem;
+}
+.boxes-1 .item-3 {
+   grid-area: top-right;
+   background-color: #4a4a4a;
+   color: #d8d8d8;
+   margin-top: 7.5rem;
+   margin-right: 13.8rem;
+   margin-left: 0rem;
+}
+.boxes-1 .item-4 {
+   grid-area: bottom-left;
+   border-radius: 50%;
+   margin-right: 0rem;
+   margin-bottom: 7.5rem;
+   margin-left: 13.6rem;
+}
+.boxes-1 .item-5 {
+   grid-area: bottom-middle;
+}
+.boxes-1 .item-6 {
+   grid-area: bottom-right;
+   margin-right: 13.8rem;
+   margin-bottom: 7.5rem;
+   margin-left: 0rem;
+}
+.boxes-2 .item-1 {
+   grid-area: bottom-left;
+   margin-right: 0rem;
+   margin-bottom: 7.5rem;
+   margin-left: 13.6rem;
+}
+.boxes-2 .item-2 {
+   grid-area: bottom-middle;
+   margin-bottom: 7.5rem;
+}
+.boxes-2 .item-3 {
+   grid-area: bottom-right;
+   margin-right: 13.8rem;
+   margin-bottom: 7.5rem;
+   margin-left: 0rem;
+}
+.boxes-2 .item-4 {
+   grid-area: top-left;
+   margin-top: 7.5rem;
+   margin-right: 0rem;
+   margin-left: 13.6rem;
+}
+.boxes-2 .item-5 {
+   grid-area: top-middle;
+   margin-top: 7.5rem;
+}
+.boxes-2 .item-6 {
+   grid-area: top-right;
+   border-radius: 50%;
+   margin-top: 7.5rem;
+   margin-right: 13.8rem;
+   margin-left: 0rem;
+}
+.boxes-3 .item-1 {
+   grid-area: top-right;
+   margin-top: 7.5rem;
+   margin-right: 13.8rem;
+   margin-left: 0rem;
+}
+.boxes-3 .item-2 {
+   grid-area: bottom-middle;
+   margin-bottom: 7.5rem;
+}
+.boxes-3 .item-3 {
+   grid-area: top-left;
+   margin-top: 7.5rem;
+   margin-right: 0rem;
+   margin-left: 13.6rem;
+}
+.boxes-3 .item-4 {
+   grid-area: bottom-right;
+   margin-right: 13.8rem;
+   margin-bottom: 7.5rem;
+   margin-left: 0rem;
+}
+.boxes-3 .item-5 {
+   grid-area: top-middle;
+   margin-top: 7.5rem;
+   border-radius: 50%;
+}
+.boxes-3 .item-6 {
+   grid-area: bottom-left;
+   margin-right: 0rem;
+   margin-bottom: 7.5rem;
+   margin-left: 13.6rem;
+}
